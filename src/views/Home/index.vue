@@ -26,8 +26,8 @@ export default defineComponent({
   },
   methods: {
     routeGo(index: number | string) {
-      this.$router.push(`${index}`);
       console.log(index);
+      this.$router.push(`/${index}`);
     },
   },
 });
@@ -49,7 +49,7 @@ main {
       border-radius: 24px;
       text-align: center;
       line-height: 50px;
-      background: #e0e0e0;
+      background: #d1f0ff;
       box-shadow: 13px 13px 26px #bababa, -10px -13px 16px #ffffff4a;
       font-size: 15px;
       font-weight: bold;
